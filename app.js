@@ -8,7 +8,7 @@ const yargs = require('yargs');
 const notes = require('./notes.js'); //require file from relative path
 
 const argv = yargs.argv
-var command = process.argv[2];
+var command = argv._[0];
 
 console.log('Yargs: ', argv);
 //console.log('Process ', process.argv);
